@@ -1,0 +1,11 @@
+USDViewer/
+build/
+renders/
+lib/usd
+cmake-build-*/
+.idea/
+.vs*/
+out/
+install/
+release/
+render*.png

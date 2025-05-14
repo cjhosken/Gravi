@@ -1,0 +1,36 @@
+{
+  "Plugins": [
+    {
+      "Info": {
+        "Types": {
+          "HdGraviRendererPlugin": {
+            "bases": [
+              "HdRendererPlugin"
+            ],
+            "displayName": "Gravi",
+            "priority": 99
+          },
+          "HdGraviAdapter": {
+            "bases": [
+              "UsdImagingGprimAdapter"
+            ],
+            "isInternal": true,
+            "primTypeName": "GravityWell"
+          },
+          "HdGraviRenderSettingsAdapter": {
+            "bases": [
+              "UsdImagingRenderSettingsAdapter"
+            ],
+            "isInternal": true,
+            "primTypeName": "GraviRenderSettings"
+          }
+        }
+      },
+      "LibraryPath": "@PLUG_INFO_LIBRARY_PATH@",
+      "Name": "hdGravi",
+      "ResourcePath": "@PLUG_INFO_RESOURCE_PATH@",
+      "Root": "@PLUG_INFO_ROOT@",
+      "Type": "library"
+    }
+  ]
+}

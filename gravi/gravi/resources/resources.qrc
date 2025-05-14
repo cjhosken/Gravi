@@ -1,0 +1,21 @@
+<!--
+Resources to use in Gravi.
+Author: Christopher Hosken
+version 1.0
+date 07/05/2025 Pre-release Cleanup
+-->
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="logo">../images/icons/logo.png</file>
+        <file alias="renderMode">../images/icons/renderMode.png</file>
+        <file alias="solidMode">../images/icons/solidMode.png</file>
+        <file alias="wireframeMode">../images/icons/wireframeMode.png</file>
+        <file alias="view">../images/icons/view.png</file>
+    </qresource>
+    <qresource prefix="/shaders">
+        <file alias="GridShader.frag">../shaders/GridShader.frag</file>
+        <file alias="GridShader.vert">../shaders/GridShader.vert</file>
+        <file alias="WellShader.frag">../shaders/WellShader.frag</file>
+        <file alias="WellShader.vert">../shaders/WellShader.vert</file>
+    </qresource>
+</RCC>

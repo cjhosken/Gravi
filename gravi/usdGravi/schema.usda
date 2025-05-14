@@ -1,0 +1,75 @@
+#usda 1.0
+(
+    subLayers = [
+        # To refer to schema types defined in schema.usda files from other
+        # libraries, simply add comma-separated lines of the form
+        # @<library name>/schema.usda@. In this example, we're referring
+        # to schema types from 'usd'. If you were adding sub-classes of
+        # UsdGeom schema types, you would use usdGeom/schema.usda instead.
+        # @usd/schema.usda@,
+        @usdGeom/schema.usda@,
+        @usdRender/schema.usda@
+    ]
+)
+over "GLOBAL" (
+    customData = {
+        string libraryName   = "GRAVI"
+        string libraryPath   = "."
+        string libraryPrefix = ""
+    }
+) {
+}
+// This defines the GravityWell Schema
+class GravityWell "GravityWell" (
+    doc = """A Gravity Well, used to bend light in hdGravi renders."""
+    inherits = </Gprim>
+    customData = {
+        string className = "GravityWell"
+    }
+    )
+{
+    float force = -0.98 (
+        doc = "The amount of gravitional force. Negative values attract light particles, positive values repel them."
+    )
+}
+
+class GraviRenderSettings "GraviRenderSettings" (
+    inherits = </RenderSettings>
+    doc = """Custom render settings for Gravi renderer"""
+    customData = {
+        string className = "GraviRenderSettings"
+    }
+)
+{
+    # Standard render settings properties
+    int convergedSamplesPerPixel = 16
+
+    # Custom properties for your renderer
+    int bounces = 4 (
+        doc = "Maximum number of light bounces"
+    )
+
+    uniform int2 frameRange = (1, 240) (
+        doc = ""
+    )
+
+    double lightStepSize = 0.01 (
+        doc = ""
+    )
+    double minLightStepSize = 0.001 (
+        doc = ""
+    )
+    double maxLightStepSize = 1.0 (
+        doc = ""
+    )
+
+    double maxLightDistance = 10000 (
+        doc = ""
+    )
+
+    int maxLightSteps = 1000 (
+        doc = ""
+    )
+
+    string outputPath = "./render_####.png"
+}
