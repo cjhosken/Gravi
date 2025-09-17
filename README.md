@@ -33,13 +33,13 @@
 <div style="flex:1;min-width:300px;">
   <h3>🍳 Kitchen Set</h3>
   <p>Gravity well simulation inside the USD kitchen scene.</p>
-  <a href="https://github.com/user-attachments/assets/f8b9bf07-0ea1-4f0e-9d16-bb68e565d046">▶️ Watch Example</a>
+  <video src="https://github.com/user-attachments/assets/f8b9bf07-0ea1-4f0e-9d16-bb68e565d046" width="100%" controls></video>
 </div>
 
 <div style="flex:1;min-width:300px;">
   <h3>🌌 Interstellar</h3>
   <p>A re-creation attempt of a shot from <i>Interstellar (2014)</i>.</p>
-  <a href="https://github.com/user-attachments/assets/eb25930b-0167-466f-8d57-9037a90ac457">▶️ Watch Example</a>
+  <video src="https://github.com/user-attachments/assets/eb25930b-0167-466f-8d57-9037a90ac457" width="100%" controls></video>
 </div>
 
 </div>
@@ -50,7 +50,7 @@
 
 Experience **Gravi** in action:  
 
-👉 [Watch Demo Video](https://github.com/user-attachments/assets/12013a84-0334-4b61-a554-2fad2d615dff)  
+<video src="https://github.com/user-attachments/assets/12013a84-0334-4b61-a554-2fad2d615dff" width="100%" controls></video>
 
 📦 Get the latest version from the [**Release Page**](https://github.com/cjhosken/gravi/releases).
 
